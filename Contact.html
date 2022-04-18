@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+            color: #555;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        #main-header{
+            background-color: coral;
+            color: #fff;
+            text-align: center;
+        }
+        .container{
+            width:100%;
+            margin: auto;
+            overflow:hidden;
+        }
+        #navbar{
+            background-color:#333;
+            color:#fff;
+        }
+        #navbar li{
+            display:inline;
+        }
+        #navbar a{
+            color:#fff;
+            text-decoration: none;
+            font-size: 25px;
+            padding-right: 15px;
+        }
+        #navbar a:hover{
+            background-color: #ffd158;
+            color:black;
+        }
+        
+        #main{
+            float: left;
+            width: 70%;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+        #sidebar{
+            float: right;
+            widows: 20px;
+            background-color: #333;
+            color:#fff;
+            padding:0 30px;
+            box-sizing: border-box;
+        }
+        #sideba{
+            float: right;
+            widows: 20px;
+            background-color: white;
+            color:#fff;
+            padding:0 30px;
+
+        }
+            .info{
+            width:50%;
+            margin: auto;
+            overflow:hidden
+
+        }
+    </style>
+    <script type="text/javascript">
+        function Validation()
+        {
+        var a = document.form.phone.value;
+        if(a=="")
+        {
+        alert("please enter All information");
+        document.form.phone.focus();
+        return false;
+        }
+        if(isNaN(a))
+        {
+        alert("Enter the valid Mobile Number(Like : 0934678987)");
+        document.form.phone.focus();
+        return false;
+        }
+        if((a.length < 1) || (a.length > 10))
+        {
+        alert(" Your Mobile Number must be 1 to 10 Integers");
+        document.form.phone.select();
+        return false;
+        }
+        }
+        </script>
+    
+</head>
+<body>
+    
+    <header id="main-header">
+        <div class="container">
+            <h1>Contact me</h1>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="background.html">Biography</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <section id="showcase">
+    <form action="#"
+            <fieldset>
+                <aside id="sideba">
+                    <img src="birhan.jpeg" alt="" width="300" height="300"><br><br><br>
+                </aside>
+               
+            </fieldset>
+        </form>
+        <form name="form" method="post" onsubmit="return Validation()">
+            <br><br>
+            Fname:<input type="text">
+            Lname:<input type="text">
+            <br><br><br><br>
+            Email: <input type="email">
+            <tr>
+            <td> Mobile No:</td>
+            <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+            <td></td>
+            <br><br><br>
+            message:<textarea name="message" rows="5" cols="40"></textarea>
+            <br><br>
+            <div>
+                <div class="info">
+                <input type="submit" name="submit" value="submit"style="position:center">
+             </div>
+            </div>
+            </tr>
+            
+            </form>
+            
+    </section>
+    <div class="container">
+        <section id="main">
+            <h1>Contact information</h1>
+            <div>
+                <ul>
+                <li>Phone Number:</li>
+                <ul>
+                    <li>+251942030866</li>
+                </ul>
+                <li>Email</li>
+                <ul>
+                    <li>birhanmulugeta16@gmail.com</li>
+                </ul>
+                <li>Telegram username </li>
+                <ul>
+                    @BMW08
+                </ul>
+                </ul>
+            </div>
+    
+        </section>
+        <aside id="sidebar">
+            <h1>social network</h1>
+            <ul>
+                
+                <div><i class="fa fa-instagram "></i>  instagram</div>
+                <div><i class=" fa fa-telegram "></i>   telegram</div>
+            </ul>
+         </aside>
+    </div>
+    
+</body>
+</html>

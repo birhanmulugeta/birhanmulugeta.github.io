@@ -1,0 +1,10 @@
+#main-header img {
+  width: 100%;
+  height: 100%; }
+header{
+    background-image: url(../f2.jpg);
+    height:150vh;
+    background-size: cover;
+    background-position: center;
+
+}
